@@ -9,15 +9,14 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  min-height: 100vh;
   padding: 1rem 9rem;
   position: relative;
 }
 
 header {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 2px rgba(0, 0, 0, 0.4);
@@ -25,8 +24,8 @@ header {
   margin-bottom: 2rem;
 }
 header img {
-  height: 53px;
-  width: 53px;
+  height: 56px;
+  width: 56px;
 }
 header h1 {
   font-size: 25px;
@@ -94,7 +93,7 @@ footer a {
     padding: 1rem 1rem;
   }
   header {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   footer {
     margin-right: 50%;

@@ -24,23 +24,22 @@ $page-padding: 9rem;
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    min-height: 100vh;
     padding: 1rem $page-padding;
     position: relative;
 }
 
 header{
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     border-bottom: solid 2px $black;
     padding: 0.3rem 0;
     margin-bottom: 2rem;
     img{
-        height: 53px;
-        width: 53px; 
+        height: 56px;
+        width: 56px; 
     }
     h1{
         font-size: 25px;
@@ -102,13 +101,10 @@ footer{
         padding: 1rem 1rem;
     }
     header{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     footer{
         margin-right: 50%;
         transform: translateX(50%);
     }
 }
-// @media(max-width: 1000px){
-    
-// }
