@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$black: rgba(black, 0.4);
+$page-padding: 9rem;
+@mixin p-styles{
+    margin: 0;
+    font-size: 18px;
+}
+@mixin a-styles{
+    text-decoration: none; 
+    color: white;
+    background-color: rgb(133, 127, 132);
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1rem $page-padding;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px $black;
+    padding: 0.3rem 0;
+    margin-bottom: 2rem;
+    img{
+        height: 53px;
+        width: 53px; 
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+main{
+    display: flex;
+    flex-direction: column;
+    p{
+        @include p-styles;
+        line-height: 2rem;
+    }
+    article{
+        margin-top: 3rem;
+        ul{
+            list-style-type: none;
+            padding-left: 0;
+            li{
+                margin-bottom: 1.5rem;
+                a{
+                    @include a-styles;  
+                }
+                a:hover{
+                    box-shadow: 0 0 0.5rem 0.05rem $black;
+                }
+            }
+        }
+    }
+}
+footer{
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+    margin-right: $page-padding;
+    a{
+        color:rgb(38, 30, 48)
+    }
+}

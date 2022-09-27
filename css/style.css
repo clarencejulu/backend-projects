@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1rem 9rem;
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.4);
+  padding: 0.3rem 0;
+  margin-bottom: 2rem;
+}
+header img {
+  height: 53px;
+  width: 53px;
+}
+header h1 {
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 2rem;
+}
+main article {
+  margin-top: 3rem;
+}
+main article ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+main article ul li {
+  margin-bottom: 1.5rem;
+}
+main article ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(133, 127, 132);
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+}
+main article ul li a:hover {
+  box-shadow: 0 0 0.5rem 0.05rem rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  margin-right: 9rem;
+}
+footer a {
+  color: rgb(38, 30, 48);
+}/*# sourceMappingURL=style.css.map */
