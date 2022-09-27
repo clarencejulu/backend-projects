@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   padding: 1rem 9rem;
   position: relative;
@@ -66,7 +67,37 @@ footer {
   bottom: 3rem;
   right: 0;
   margin-right: 9rem;
+  text-align: center;
 }
 footer a {
   color: rgb(38, 30, 48);
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 1rem 6rem;
+  }
+  footer {
+    margin-right: 6rem;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    padding: 1rem 3rem;
+  }
+  footer {
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding: 1rem 1rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  footer {
+    margin-right: 50%;
+    transform: translateX(50%);
+  }
 }/*# sourceMappingURL=style.css.map */
