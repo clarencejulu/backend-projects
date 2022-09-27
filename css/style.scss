@@ -26,7 +26,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
     padding: 1rem $page-padding;
-    position: relative;
 }
 
 header{
@@ -48,6 +47,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
     p{
         @include p-styles;
         line-height: 2rem;
@@ -70,13 +70,9 @@ main{
     }
 }
 footer{
-    position: absolute;
-    bottom: 3rem;
-    right: 0;
-    margin-right: $page-padding;
-    text-align: center;
+    text-align: right;
     a{
-        color:rgb(38, 30, 48)
+        color:rgb(38, 30, 48);
     }
 }
 
@@ -84,16 +80,10 @@ footer{
     body{
         padding: 1rem 6rem;
     }
-    footer{
-        margin-right: 6rem;
-    }
 }
 @media(max-width: 800px){
     body{
         padding: 1rem 3rem;
-    }
-    footer{
-        margin-right: 3rem;
     }
 }
 @media(max-width: 500px){
@@ -104,7 +94,6 @@ footer{
         flex-direction: column-reverse;
     }
     footer{
-        margin-right: 50%;
-        transform: translateX(50%);
+        text-align: center;
     }
 }

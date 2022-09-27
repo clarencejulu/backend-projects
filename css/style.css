@@ -11,7 +11,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding: 1rem 9rem;
-  position: relative;
 }
 
 header {
@@ -34,6 +33,7 @@ header h1 {
 main {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 }
 main p {
   margin: 0;
@@ -62,11 +62,7 @@ main article ul li a:hover {
 }
 
 footer {
-  position: absolute;
-  bottom: 3rem;
-  right: 0;
-  margin-right: 9rem;
-  text-align: center;
+  text-align: right;
 }
 footer a {
   color: rgb(38, 30, 48);
@@ -76,16 +72,10 @@ footer a {
   body {
     padding: 1rem 6rem;
   }
-  footer {
-    margin-right: 6rem;
-  }
 }
 @media (max-width: 800px) {
   body {
     padding: 1rem 3rem;
-  }
-  footer {
-    margin-right: 3rem;
   }
 }
 @media (max-width: 500px) {
@@ -96,7 +86,6 @@ footer a {
     flex-direction: column-reverse;
   }
   footer {
-    margin-right: 50%;
-    transform: translateX(50%);
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
